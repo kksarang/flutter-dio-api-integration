@@ -37,7 +37,19 @@ class _HomeSreenState extends State<HomeSreen> {
         elevation: 1,
       ),
       body: Column(
-        children: [FutureBuilder(future: getPostApi(), builder: (context, snapshot) {})],
+        children: [
+          FutureBuilder(
+              future: getPostApi(),
+              builder: (context, snapshot) {
+                if (!snapshot.hasData) {
+                  return Text("loading");
+                } else {
+                  return ListView.builder(itemBuilder: (context, index) {
+                    return Text(index.toString());
+                  });
+                }
+              })
+        ],
       ),
     );
   }
