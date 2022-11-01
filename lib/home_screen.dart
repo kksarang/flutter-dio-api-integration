@@ -35,6 +35,7 @@ class _HomeSreenState extends State<HomeSreen> {
       appBar: AppBar(
         title: const Text("Api Testing"),
         elevation: 1,
+        actions: [],
       ),
       body: Column(
         children: [
