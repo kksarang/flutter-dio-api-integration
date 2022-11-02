@@ -34,8 +34,7 @@ class _HomeSreenState extends State<HomeSreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Api Testing"),
-        elevation: 1,
-        actions: [],
+        elevation: 3,
       ),
       body: Column(
         children: [
