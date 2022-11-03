@@ -48,7 +48,7 @@ class _HomeSreenState extends State<HomeSreen> {
                     return Text(index.toString());
                   });
                 }
-              })
+              }),
         ],
       ),
     );
