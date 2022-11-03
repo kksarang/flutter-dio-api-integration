@@ -33,8 +33,8 @@ class _HomeSreenState extends State<HomeSreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Api Testing"),
-        elevation: 3,
+        title: const Text("Api Demo Testing"),
+        elevation: 1,
       ),
       body: Column(
         children: [
