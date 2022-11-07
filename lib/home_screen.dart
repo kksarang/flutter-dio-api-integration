@@ -38,6 +38,7 @@ class _HomeSreenState extends State<HomeSreen> {
       ),
       body: Column(
         children: [
+          Spacer(),
           FutureBuilder(
               future: getPostApi(),
               builder: (context, snapshot) {
