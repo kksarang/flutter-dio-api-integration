@@ -43,7 +43,7 @@ class _HomeSreenState extends State<HomeSreen> {
               future: getPostApi(),
               builder: (context, snapshot) {
                 if (!snapshot.hasData) {
-                  return Text("loading");
+                  return Text("loading..");
                 } else {
                   return ListView.builder(itemBuilder: (context, index) {
                     return Text(index.toString());
